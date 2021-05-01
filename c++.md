@@ -104,16 +104,19 @@ class Example;
 class t_vec3; // designed be used like a primitive type
 ```
 ### Structs
-Structs should be named lowercase
-### Enums
-Enums should be named short, lowercase and be prefixed with `e_`. Heavy abbreviation of words is permissible as long as the abbreviations are somewhat common.
+Structs should be named like classes, except prefixed with a `s_`.
 ```cpp
-enum class e_example;
+struct s_Example;
+```
+### Enums
+Enums should be named like classes, except they should be prefixed with `e_`.
+```cpp
+enum class e_Example : unsigned char;
 ```
 #### Enum Members
 Enum members should be named fully capitalized with underscores separating words.
 ```cpp
-enum class e_example {
+enum class e_Example : unsigned char {
   MEMBER_ZERO,
   MEMBER_ONE,
   MEMBER_TWO
@@ -241,9 +244,9 @@ class Example {
 ## Structs
 Structs are very good for passing around grouped chunks of data that don't need any logic implementation. All rules for classes apply to structs, besides the rules regarding member access (if at all possible, struct members should always be public) and the rules for access section specifiers (`public:`, `protected:`, `private:`).
 ## Enums
-Enums are useful for error codes, response codes, etc. There is only one rule to enums, you must use `enum class`, rather than just `enum` when declaring them. Using `enum class` prevents all of an enum's members from being dumped into the global namespace.
+Enums are useful for error codes, response codes, etc. There are only two rules to enums, you must use `enum class`, rather than just `enum` when declaring them. Using `enum class` prevents all of an enum's members from being dumped into the global namespace. And, keep their underlying type as small as possible. If the amount of members you have will fit into an 8 bit integer, use one.
 ```cpp
-enum class e_example {
+enum class e_Example : unsigned char {
   MEMBER_ZERO,
   MEMBER_ONE,
   MEMBER_TWO

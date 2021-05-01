@@ -56,7 +56,7 @@ Regular local variables should be named lowercase with every word separated by a
 int example_integer = 1;
 ```
 #### Class Member Variables
-Private class member variables should be named like local variables, except that they should be prefixed with an underscore. This doesn't apply to public class member variables.
+Private and protected class member variables should be named like local variables, except that they should be prefixed with an underscore. This doesn't apply to public class member variables.
 ```cpp
 class Example {
   public:
@@ -66,7 +66,7 @@ class Example {
 };
 ```
 #### Struct Member Variables
-Private struct member variables should be named like local variables, except that they should be prefixed with an underscore. This doesn't apply to public struct member variables.
+Private and protected struct member variables should be named like local variables, except that they should be prefixed with an underscore. This doesn't apply to public struct member variables.
 #### Parameters
 Parameters should be named like local variables, except they should be prefixed with two underscores.
 ```cpp
@@ -78,7 +78,7 @@ Local functions should be named with the first word lowercase and every consecut
 void exampleFunction() {}
 ```
 #### Class Member Functions
-Private class member functions should be named like local functions, except that they should be prefixed with an underscore. This doesn't apply to public class member functions.
+Private and protected class member functions should be named like local functions, except that they should be prefixed with an underscore. This doesn't apply to public class member functions.
 ```cpp
 class Example {
   public:
@@ -89,7 +89,7 @@ class Example {
 };
 ```
 #### Struct Member Functions
-Private struct member functions should be named like local functions, except that they should be prefixed with an underscore. This doesn't apply to public struct member functions. Also, please stop putting functions into structs. ;)
+Private and protected struct member functions should be named like local functions, except that they should be prefixed with an underscore. This doesn't apply to public struct member functions. Also, please stop putting functions into structs. ;)
 ### Namespaces
 Namespaces should be named like projects.
 ### Primitive Types

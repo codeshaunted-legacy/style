@@ -114,9 +114,9 @@ enum class e_example;
 Enum members should be named fully capitalized with underscores separating words.
 ```cpp
 enum class e_example {
-  MEMBER_ZERO;
-  MEMBER_ONE;
-  MEMBER_TWO;
+  MEMBER_ZERO,
+  MEMBER_ONE,
+  MEMBER_TWO
 };
 ```
 ### Macros
@@ -244,9 +244,9 @@ Structs are very good for passing around grouped chunks of data that don't need 
 Enums are useful for error codes, response codes, etc. There is only one rule to enums, you must use `enum class`, rather than just `enum` when declaring them. Using `enum class` prevents all of an enum's members from being dumped into the global namespace.
 ```cpp
 enum class e_example {
-  MEMBER_ZERO;
-  MEMBER_ONE;
-  MEMBER_TWO;
+  MEMBER_ZERO,
+  MEMBER_ONE,
+  MEMBER_TWO
 };
 ```
 ## Macros

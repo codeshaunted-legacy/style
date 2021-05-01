@@ -120,14 +120,14 @@ enum class e_example {
 };
 ```
 ### Macros
-Macros should be named fully capitalized with underscores separating words.
+Macros should be named fully capitalized with underscores separating words, as well as beginning with the project name.
 ```cpp
-#define EXAMPLE 1
+EXAMPLE_EXAMPLE_MACRO 1
 ```
 #### Macro Parameters
 Macro parameters should be named with the first letter in each word capitalized.
 ```cpp
-#define EXAMPLE(Parameter) Parameter
+#define EXAMPLE_EXAMPLE_MACRO(Parameter) Parameter
 ```
 ## Building
 All projects should be built using CMake. There should be a `CMakeLists.txt` file in the main project directory, as well as `source`, `include` and `third_party` plus all their sub directories. Don't dynamically include source files for build. Explicitly list sources within your lists.

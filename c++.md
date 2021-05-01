@@ -293,7 +293,7 @@ Comments should be lowercase, as well as short and to the point. Don't ramble on
 doExampleStuff(); // does example stuff
 ```
 ### File Comments
-At the top of every file there should be at least two comments, the first one containing the name of your team and project, separated by a dash. And, a second one with the name of the file. An optional third comment can contain the boilerplate of your license.
+At the top of every file there should be at least two comments, the first one containing the name of your team and project, separated by a dash. And, a second one with the name of the file. An optional third comment can contain a description of what the file contains. A fourth comment can contain the boilerplate to your license.
 ```cpp
 // codeshaunted - example
 // example.cc

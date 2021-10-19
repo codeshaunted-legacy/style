@@ -145,7 +145,7 @@ All header files should contain an include guard to prevent against multiple inc
 #ifndef EXAMPLE_EXAMPLE_HH
 #define EXAMPLE_EXAMPLE_HH
 
-// code and includes goes here
+// code and includes go here
 
 #endif // EXAMPLE_EXAMPLE_HH
 ```
@@ -307,7 +307,7 @@ If something must be fixed or changed later, add a comment that starts with `tod
 doExampleStuff(); // todo: fix example stuff
 ```
 ## Formatting and White Space
-Excessive white space is forbidden. Despite what some may tell you, it can make your code harder to read.
+Despite what some may tell you, excessive whitespace is the root of all evil and can actually make your code harder to read.
 ### Tab Size
 Use tabs made of two real space characters. Any modern text editor or IDE should allow you to do this.
 ### Indents
